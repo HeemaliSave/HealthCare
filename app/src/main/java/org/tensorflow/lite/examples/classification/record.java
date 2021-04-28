@@ -45,11 +45,11 @@ public class record extends AppCompatActivity {
                                 // index is start with 0
                                 String Date
                                         = dayOfMonth + "-"
-                                        + (month + 1) + "-" + year;
+                                        + (month+1) + "-" + year;
 
                                 // set this date in TextView for Display
                                 Intent intent = new Intent(record.this, RecordDetail.class);
-                                intent.putExtra("currendDate",Date);
+                                intent.putExtra("currentDate",Date);
                                 startActivity(intent);
                             }
                         });

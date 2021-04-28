@@ -3,9 +3,9 @@ package org.tensorflow.lite.examples.classification;
 public class Food {
     int id;
     String name,type1,type2;
-    float carb,protein,fat,fibre;
+    String carb,protein,fat,fibre;
 
-    public Food(int id, String name, String type1, String type2, float carb, float protein, float fat, float fibre) {
+    public Food(int id, String name, String type1, String type2, String carb, String protein, String fat, String fibre) {
         this.id = id;
         this.name = name;
         this.type1 = type1;
@@ -48,36 +48,50 @@ public class Food {
         this.type2 = type2;
     }
 
-    public float getCarb() {
+    public String getCarb() {
         return carb;
     }
 
-    public void setCarb(float carb) {
+    public void setCarb(String carb) {
         this.carb = carb;
     }
 
-    public float getProtein() {
+    public String getProtein() {
         return protein;
     }
 
-    public void setProtein(float protein) {
+    public void setProtein(String protein) {
         this.protein = protein;
     }
 
-    public float getFat() {
+    public String getFat() {
         return fat;
     }
 
-    public void setFat(float fat) {
+    public void setFat(String fat) {
         this.fat = fat;
     }
 
-    public float getFibre() {
+    public String getFibre() {
         return fibre;
     }
 
-    public void setFibre(float fibre) {
+    public void setFibre(String fibre) {
         this.fibre = fibre;
+    }
+
+    @Override
+    public String toString() {
+        return "Food{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type1='" + type1 + '\'' +
+                ", type2='" + type2 + '\'' +
+                ", carb='" + carb + '\'' +
+                ", protein='" + protein + '\'' +
+                ", fat='" + fat + '\'' +
+                ", fibre='" + fibre + '\'' +
+                '}';
     }
 }
 

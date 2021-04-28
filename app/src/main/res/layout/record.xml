@@ -71,8 +71,13 @@
         android:id="@+id/calender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="156dp"></CalendarView>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.19999999"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"></CalendarView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
