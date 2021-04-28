@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5">
+    tools:context=".Today">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_additem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add item"
@@ -19,10 +19,12 @@
         app:layout_constraintVertical_bias="0.235" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/food_weight_remain"
         android:layout_width="126dp"
         android:layout_height="37dp"
         android:ems="10"
+        android:text="0"
+        android:padding="5dp"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +34,7 @@
         app:layout_constraintVertical_bias="0.597" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_weight_remain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get weight"
@@ -71,7 +73,7 @@
         app:layout_constraintVertical_bias="0.405" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get weight"
@@ -108,10 +110,11 @@
         app:layout_constraintVertical_bias="0.688" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal3"
+        android:id="@+id/food_weight"
         android:layout_width="126dp"
         android:layout_height="37dp"
         android:ems="10"
+        android:padding="5dp"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +137,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -146,7 +149,7 @@
         app:layout_constraintVertical_bias="0.961" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btn_meal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add meal"
@@ -158,7 +161,7 @@
         app:layout_constraintVertical_bias="0.961" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btn_suggest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Suggest"

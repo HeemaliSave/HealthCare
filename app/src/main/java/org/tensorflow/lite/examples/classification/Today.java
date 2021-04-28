@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class  Today extends AppCompatActivity {
 
-    Button detect_btn;
-    EditText food_name;
+    Button detect_btn,meal_btn,back_btn,weight_btn,weight_btn_remain;
+    EditText food_name,food_weight,food_weight_ramain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +23,8 @@ public class  Today extends AppCompatActivity {
         }
 
         System.out.println(item_detected);
-        detect_btn = (Button)findViewById(R.id.detect_btn);
-        food_name = (EditText)findViewById(R.id.food_name);
+        initialize();
+
         food_name.setText(item_detected);
         detect_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,5 +33,32 @@ public class  Today extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        weight_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double rand = 25 + Math.random()*5;
+                String rounded = String.format("%.1f", rand);
+                food_weight.setText(rounded);
+            }
+        });
+        weight_btn_remain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double rand = 10 + Math.random()*5;
+                String rounded = String.format("%.1f", rand);
+                food_weight_ramain.setText(rounded);
+            }
+        });
+    }
+
+    private void initialize() {
+        detect_btn = (Button)findViewById(R.id.detect_btn);
+        meal_btn = findViewById(R.id.btn_meal);
+        back_btn = findViewById(R.id.btn_back);
+        weight_btn = findViewById(R.id.btn_weight);
+        weight_btn_remain = findViewById(R.id.btn_weight_remain);
+        food_name = (EditText)findViewById(R.id.food_name);
+        food_weight = findViewById(R.id.food_weight);
+        food_weight_ramain = findViewById(R.id.food_weight_remain);
     }
 }
