@@ -45,7 +45,7 @@ public class  Today extends AppCompatActivity {
                 String str_food_name = food_name.getText().toString();
                 String str_initial = food_weight.getText().toString();
                 String str_remain = food_weight_ramain.getText().toString();
-                String totoal = String.valueOf(Float.parseFloat(str_initial) - Float.parseFloat(str_remain));
+                String totoal = String.format("%.1f", Float.parseFloat(str_initial) - Float.parseFloat(str_remain));
                 Food food = new DBHelper().getFoodByName(str_food_name);
                 String id = String.valueOf(gettimeinmili());
                 String mealtype = mealType();

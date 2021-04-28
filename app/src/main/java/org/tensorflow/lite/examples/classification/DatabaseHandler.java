@@ -54,9 +54,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(Key8, food.getProtein());
         values.put(Key9, food.getFibre());
         values.put(Key10, food.getFats());
-
+    try {
         // Inserting Row
         db.insert(TABLE_FOODS, null, values);
+    }catch (Exception e){
+
+    }
         //2nd argument is String containing nullColumnHack
         db.close(); // Closing database connection
     }
@@ -66,7 +69,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_FOODS, new String[] { Key_id,
-                        Key1, Key2, Key3, Key4, Key4, Key5, Key6, Key7,
+                        Key1, Key2, Key3, Key4, Key5, Key6, Key7,
                         Key8, Key9, Key10}, Key_id + "=?",
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
