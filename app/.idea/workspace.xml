@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26b5c820-0c26-415d-b3ce-626627ebdd8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/assets/mobilenet_v1_1.0_224_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/mobilenet_v1_1.0_224_quant_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/MainActivity2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/MainActivity3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/MainActivity4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/MainActivity5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/suggest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/backg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/main_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/record.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/suggest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/assets/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/labels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/CameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/ClassifierActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/ClassifierActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatEfficientNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatEfficientNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedEfficientNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedEfficientNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/tfe_ic_activity_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/tfe_ic_activity_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1lheCpIIhxaqO5McaNYn0fqhVqw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26b5c820-0c26-415d-b3ce-626627ebdd8d" name="Default Changelist" comment="" />
+      <created>1608053625909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608053625909</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608054690852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608054690852" />
+  </component>
+</project>

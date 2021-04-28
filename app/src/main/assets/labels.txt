@@ -1,0 +1,7 @@
+0 beans
+1 blueberry
+2 carrot
+3 cheerios
+4 mango
+5 milk
+6 rice
