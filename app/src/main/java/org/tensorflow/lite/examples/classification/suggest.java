@@ -1,6 +1,7 @@
 package org.tensorflow.lite.examples.classification;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ import java.util.Date;
 
 public class suggest extends AppCompatActivity {
     float total_carb=0,total_protein=0,total_fat=0,total_fibre=0;
+    final String MyPref = "ProfileDetail";
     DatabaseHandler dh;
     TextView suggest_text;
     @Override
@@ -31,11 +33,68 @@ public class suggest extends AppCompatActivity {
         setContentView(R.layout.suggest);
 
         suggest_text = findViewById(R.id.tv_suggest);
-        dh = new DatabaseHandler(this);
 
+        dh = new DatabaseHandler(this);
         getDataFromDB();
+        readLocalStorage();
+
         apiCall();
 
+    }
+
+    private void readLocalStorage() {
+        SharedPreferences sh = getSharedPreferences(MyPref,MODE_PRIVATE);
+        Float height = sh.getFloat("UHeight",20.0f);
+        Float weight = sh.getFloat("UWeight",45.0f);
+
+        float carbt,proteint,fatt,fibret;
+        if(height<=55){
+            carbt = 37;
+            proteint = 2;
+            fatt = 15;
+            fibret = 3;
+        }
+        else if(height<=60){
+            carbt = 66;
+            proteint = 7;
+            fatt = 24;
+            fibret = 7;
+        }
+        else if(height<=65){
+            carbt = 101;
+            proteint = 12;
+            fatt = 33;
+            fibret = 11;
+        }
+        else{
+            carbt = 150;
+            proteint = 16;
+            fatt = 40;
+            fibret = 14;
+        }
+        if(total_fat>fatt){
+            total_fat = 0;
+        }else{
+            total_fat = fatt - total_fat;
+        }
+
+        if(total_protein>proteint){
+            total_protein = 0;
+        }else{
+            total_protein = proteint - total_protein;
+        }
+
+        if(total_carb>carbt){
+            total_carb = 0;
+        }else{
+            total_carb = carbt - total_carb;
+        }
+
+        if(total_fibre>fibret){
+            total_fibre = 0;
+        }else{
+            total_fibre = fibret - total_fibre;
+        }
     }
 
     private void getDataFromDB() {
@@ -93,6 +152,7 @@ public class suggest extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    Log.d("TestingApi","Carb: "+ total_carb +", Fat: "+total_fat+", Fibre: "+total_fibre+", Protein: "+total_protein);
                     Log.d("TestingApi",response.getString("data"));
                     suggest_text.setText(response.getString("data"));
                 } catch (JSONException e) {
