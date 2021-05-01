@@ -63,44 +63,5 @@ public class Home extends AppCompatActivity {
         });
     }
 
-    private void apiTesting() {
-        String url = "http://10.0.2.2:8000/";
-        RequestQueue requestQueue;
-        Context context;
-        requestQueue = Volley.newRequestQueue(this);
 
-        JsonObjectRequest jsonrequestQueue;
-        jsonrequestQueue = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                try {
-                    Log.d("TestingApi",response.getString("data"));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("TestingApi","Something wrong "+error.toString());
-            }
-        });
-//        jsonrequestQueue.setRetryPolicy(new RetryPolicy() {
-//            @Override
-//            public int getCurrentTimeout() {
-//                return 50000;
-//            }
-//
-//            @Override
-//            public int getCurrentRetryCount() {
-//                return 50000;
-//            }
-//
-//            @Override
-//            public void retry(VolleyError error) throws VolleyError {
-//
-//            }
-//        });
-        requestQueue.add(jsonrequestQueue);
-    }
 }
